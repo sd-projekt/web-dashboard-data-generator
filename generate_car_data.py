@@ -1,3 +1,4 @@
+import time
 from fastapi.encoders import isoformat
 from mongo_helper_functions import *
 from random import uniform
@@ -48,8 +49,9 @@ def generate_entries():
             parameterCol.insert_one(currentDocument)
 
 def main():
-    for i in range(0,100):
+    while True:
         generate_entries()
+        time.sleep(0.5)
 
 
 if __name__ == "__main__":
