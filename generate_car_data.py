@@ -11,10 +11,10 @@ parameterDict = { # Format: [Value, min, max, unit]
     "accumulator": [["voltage_hv", 400, 600, "V"], ["voltage_lv", 17, 25, "V"], ["current_hv", 0, 133, "A"], ["lowest_cell_voltage", 2.25, 3.5, "V"], ["soc", 60, 80, "%"], ["contactor_state", 0, 0, ""]],
     "drivecontroller": [["statemachine_state", 0, 3, ""]],
     "pedals": [["brake", 0, 100, "%"], ["accelerator", 0, 100, "%"]],
-    "steering_angle": [["value", -180, 180, "°"]],
+    "steering_angle": [["value", 0, 360, "°"]],
     "spring_travel": [["value_fr", 45, 60, "mm"], ["value_rr", 45, 60, "mm"], ["value_rl", 45, 60, "mm"], ["value_fl", 45, 60, "mm"]],
-    "velocity": [["value_fr", 0, 110, "km/h"], ["value_rr", 0, 110, "km/h"], ["value_rl", 0, 110, "km/h"], ["value_fl", 0, 110, "km/h"]],
-    "acceleration": [["value_fr", -5, 5, "m/s^2"], ["value_rr", -5, 5, "m/s^2"], ["value_rl", -5, 5, "m/s^2"], ["value_fl", -5, 5, "m/s^2"]]
+    "velocity": [["value", 0, 110, "km/h"]],
+    "acceleration": [["value", -5, 5, "m/s^2"]]
 }
 
 def generate_entries():
